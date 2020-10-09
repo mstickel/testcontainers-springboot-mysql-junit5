@@ -19,8 +19,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Testcontainers
-@ContextConfiguration(initializers = {UserServiceIT.Initializer.class })
-public class UserServiceIT {
+@ContextConfiguration(initializers = {UserRepositoryIT.Initializer.class })
+public class UserRepositoryIT {
 
     @Container
     public static MySQLContainer mySQLContainer = new MySQLContainer("mysql:5.7")
